@@ -1,6 +1,12 @@
 # Strands Agent Team with Groq LLM
 
-A basic multi-agent system built with Strands Agents using Groq as the LLM provider via LiteLLM.
+A multi-agent AI system built with Strands Agents using Groq as the LLM provider. Features both CLI and web interfaces with Railway deployment support.
+
+## 🚀 Railway Deployment
+
+**One-Click Deploy**: [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/klogins-hash/groq-strands-agent-team)
+
+For detailed deployment instructions, see [README_RAILWAY.md](README_RAILWAY.md).
 
 ## Features
 

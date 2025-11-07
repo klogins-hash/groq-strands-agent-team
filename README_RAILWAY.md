@@ -5,6 +5,7 @@ A multi-agent AI system deployed on Railway using Groq LLM for fast inference.
 ## 🚀 Quick Deploy on Railway
 
 ### One-Click Deployment
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/klogins-hash/groq-strands-agent-team)
 
 ### Manual Deployment
@@ -22,7 +23,7 @@ SECRET_KEY=your-secret-key-here
 PORT=8080
 ```
 
-4. **Deploy** - Railway will automatically build and deploy
+1. **Deploy** - Railway will automatically build and deploy
 
 ## 📋 Environment Variables
 
@@ -99,19 +100,19 @@ cp .env.template .env
 # Add your GROQ_API_KEY to .env
 ```
 
-2. **Install dependencies**:
+1. **Install dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Run locally**:
+1. **Run locally**:
 
 ```bash
 python app.py
 ```
 
-4. **Open browser**: Navigate to <http://localhost:8080>
+1. **Open browser**: Navigate to <http://localhost:8080>
 
 ## 🐛 Troubleshooting
 

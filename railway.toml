@@ -19,7 +19,7 @@ source = "."
 [services.web.build]
 builder = "nixpacks"
 buildCommand = "pip install -r requirements.txt"
-runCommand = "python app.py"
+runCommand = "gunicorn --bind 0.0.0.0:$PORT --workers 1 --timeout 120 app:app"
 
 [services.web.env]
 PORT = "8080"

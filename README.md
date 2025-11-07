@@ -19,6 +19,7 @@ A basic multi-agent system built with Strands Agents using Groq as the LLM provi
 ## Setup
 
 1. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -26,16 +27,19 @@ A basic multi-agent system built with Strands Agents using Groq as the LLM provi
 2. **Set up environment**:
    - Copy your Groq API key to the `.env` file (already included)
    - Or set it as an environment variable:
+
    ```bash
    export GROQ_API_KEY=your_api_key_here
    ```
 
 3. **Test the setup**:
+
    ```bash
    python test_agents.py
    ```
 
 4. **Run the agent team**:
+
    ```bash
    python agent_team.py
    ```
@@ -52,6 +56,7 @@ Once running, try these commands:
 ## Architecture
 
 The system uses:
+
 - **Strands Agents SDK** for agent framework
 - **LiteLLM** as the model provider interface
 - **Groq** for fast LLM inference
@@ -67,11 +72,12 @@ You can:
 
 ## Railway Deployment
 
-This project is optimized for Railway deployment using Railpack. 
+This project is optimized for Railway deployment using Railpack.
 
 ### Quick Deploy to Railway
 
 1. **Fork and push to GitHub**:
+
    ```bash
    git add .
    git commit -m "Add Railway deployment configuration"
@@ -86,7 +92,8 @@ This project is optimized for Railway deployment using Railpack.
 
 3. **Set Environment Variables**:
    In your Railway project settings, add:
-   ```
+
+   ```bash
    GROQ_API_KEY=your_groq_api_key_here
    ```
 
@@ -100,6 +107,7 @@ This project is optimized for Railway deployment using Railpack.
 ### Web Interface
 
 Once deployed, your app will have:
+
 - **Web UI**: Interactive interface at your Railway URL
 - **API Endpoint**: POST `/chat` for programmatic access
 - **Health Check**: GET `/health` for monitoring
@@ -109,23 +117,26 @@ Once deployed, your app will have:
 To test the web interface locally:
 
 1. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Set up environment**:
+
    ```bash
    cp .env.template .env
    # Edit .env with your Groq API key
    ```
 
 3. **Run locally**:
+
    ```bash
    python app.py
    ```
 
 4. **Access the web interface**:
-   Open http://localhost:8080 in your browser
+   Open <http://localhost:8080> in your browser
 
 ## Groq Models Available
 

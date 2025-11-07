@@ -12,21 +12,23 @@ A multi-agent AI system deployed on Railway using Groq LLM for fast inference.
 1. **Fork this repository** to your GitHub account
 2. **Create new Railway project** from your forked repository
 3. **Set environment variables** in Railway dashboard:
-   ```
-   GROQ_API_KEY=your_groq_api_key_here
-   GROQ_MODEL=groq/llama-3.1-8b-instant
-   TEMPERATURE=0.7
-   MAX_TOKENS=500
-   SECRET_KEY=your-secret-key-here
-   PORT=8080
-   ```
+
+```bash
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=groq/llama-3.1-8b-instant
+TEMPERATURE=0.7
+MAX_TOKENS=500
+SECRET_KEY=your-secret-key-here
+PORT=8080
+```
+
 4. **Deploy** - Railway will automatically build and deploy
 
 ## 📋 Environment Variables
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `GROQ_API_KEY` | ✅ | - | Your Groq API key from https://console.groq.com/ |
+| `GROQ_API_KEY` | ✅ | - | Your Groq API key from <https://console.groq.com/> |
 | `GROQ_MODEL` | ❌ | `groq/llama-3.1-8b-instant` | Groq model to use |
 | `TEMPERATURE` | ❌ | `0.7` | LLM temperature (0.0-1.0) |
 | `MAX_TOKENS` | ❌ | `500` | Maximum response tokens |
@@ -36,12 +38,14 @@ A multi-agent AI system deployed on Railway using Groq LLM for fast inference.
 ## 🏗️ Architecture
 
 ### Multi-Agent System
+
 - **Research Analyst** - Technology and business research
 - **Project Planner** - Strategic project planning and task breakdown
 - **Senior Developer** - Code analysis and technical guidance
 - **Team Coordinator** - Intelligent task delegation and coordination
 
 ### Technical Stack
+
 - **Backend**: Flask + Strands Agents SDK
 - **LLM**: Groq via LiteLLM
 - **Frontend**: Vanilla HTML/CSS/JavaScript
@@ -62,72 +66,85 @@ A multi-agent AI system deployed on Railway using Groq LLM for fast inference.
 Once deployed, you can ask the Team Coordinator:
 
 ### Research Tasks
+
 - "Research the latest trends in artificial intelligence"
 - "Analyze the blockchain technology market"
 - "Investigate renewable energy developments"
 
 ### Planning Tasks
+
 - "Plan a mobile app development project"
 - "Create a roadmap for a website redesign"
 - "Break down a data migration project"
 
 ### Code Analysis
+
 - "Analyze this Python code: `def calculate_sum(numbers): return sum(numbers)`"
 - "Review this JavaScript function for best practices"
 - "Suggest improvements for this SQL query"
 
 ### Complex Requests
+
 - "Research AI trends and then plan an AI assistant project"
 - "I need to understand cloud computing and plan a migration strategy"
 
 ## 🔧 Local Development
 
 1. **Clone and setup**:
-   ```bash
-   git clone https://github.com/klogins-hash/groq-strands-agent-team.git
-   cd groq-strands-agent-team
-   cp .env.template .env
-   # Add your GROQ_API_KEY to .env
-   ```
+
+```bash
+git clone https://github.com/klogins-hash/groq-strands-agent-team.git
+cd groq-strands-agent-team
+cp .env.template .env
+# Add your GROQ_API_KEY to .env
+```
 
 2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+```bash
+pip install -r requirements.txt
+```
 
 3. **Run locally**:
-   ```bash
-   python app.py
-   ```
 
-4. **Open browser**: Navigate to `http://localhost:8080`
+```bash
+python app.py
+```
+
+4. **Open browser**: Navigate to <http://localhost:8080>
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
-**API Key Errors**
+#### API Key Errors
+
 - Ensure your Groq API key is valid and active
 - Check if you have sufficient credits in your Groq account
 - Verify the key is set correctly in Railway environment variables
 
-**Deployment Issues**
+#### Deployment Issues
+
 - Check Railway build logs for errors
 - Ensure all environment variables are set
 - Verify the repository is properly forked
 
-**Performance Issues**
+#### Performance Issues
+
 - Adjust `MAX_TOKENS` for faster responses
 - Use `groq/llama-3.1-8b-instant` for speed
 - Monitor Railway resource usage
 
 ### Health Check
+
 Your deployed app includes a health endpoint:
-```
+
+```http
 GET /health
 ```
 
 Returns:
+
 ```json
 {
   "status": "healthy",
@@ -147,6 +164,7 @@ Returns:
 ## 📊 Monitoring
 
 Railway provides built-in monitoring for:
+
 - Resource usage (CPU, Memory)
 - Request logs
 - Error tracking
@@ -155,6 +173,7 @@ Railway provides built-in monitoring for:
 ## 🚀 Scaling
 
 Your Railway deployment automatically scales based on:
+
 - Traffic load
 - Resource utilization
 - Geographic distribution
@@ -179,11 +198,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🔗 Links
 
-- **Live Demo**: [Your Railway App URL]
-- **Repository**: https://github.com/klogins-hash/groq-strands-agent-team
-- **Groq Console**: https://console.groq.com/
-- **Strands Agents**: https://strandsagents.com/
-- **Railway**: https://railway.app/
+- **Live Demo**: `[Your Railway App URL]`
+- **Repository**: `[https://github.com/klogins-hash/groq-strands-agent-team](https://github.com/klogins-hash/groq-strands-agent-team)`
+- **Groq Console**: `[https://console.groq.com/](https://console.groq.com/)`
+- **Strands Agents**: `[https://strandsagents.com/](https://strandsagents.com/)`
+- **Railway**: `[https://railway.app/](https://railway.app/)`
 
 ## 📞 Support
 
